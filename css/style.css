@@ -1,0 +1,337 @@
+h1 {
+	font-size:30pt;
+	text-align:left;
+	font-family:"Abril Fatface";
+	margin-left:10pt;
+}
+
+h2 {
+	font-size:8pt;
+	color:grey;
+	font-family:"helvetica";
+	margin-left:10pt;
+}
+
+.imagecaption {
+	font-size:8pt;
+	color:grey;
+	font-family:"helvetica";
+	margin-left:10pt;
+}
+
+#finalimage {
+	font-size:8pt;
+	color:grey;
+	font-family:"helvetica";
+	margin-left:40pt;
+}
+
+#captionwrapper {
+	float:right;
+	width:32em;
+
+}
+
+
+
+blockquote {
+	font-size:10pt;
+	font-family:"Noto Serif";
+	margin:10pt 220pt 10pt 220pt;
+	font-style:italic;
+	font-weight:bold;
+
+}
+
+#content {
+	width:100%;
+	max-width:1000px;
+	margin:0 auto;
+}
+
+a {
+	outline: none;
+	font-weight:bold;
+	text-decoration:none;
+	color:darkblue;
+}
+
+
+
+     
+
+
+
+
+#caption {
+	color:grey;
+	margin-left:10pt;
+}
+
+.bodytext {
+	font-size:12pt;
+	text-align:justify;
+	margin-left:180pt;
+	margin-right:200pt;
+	line-height: 160%;
+	font-family:"Noto Serif";
+}
+
+.imagewrapper{
+	float:left;
+	width:40em;
+	padding-left:30pt;
+}
+
+.textwrapper{
+	float:left;
+	width:10em;
+	padding-right:10pt;
+}
+
+#midimagewrapper {
+	float:left;
+	text-align:center;
+
+
+}
+
+#headerimage {
+	width:120%;
+}
+
+br {
+	clear:left;
+}
+
+.rows {
+	float:left;
+}
+
+#hero {
+	width:130%;
+	text-align:left;
+	position: relative;
+}
+
+#hero2 {
+	width:90%;
+	margin-left:40pt;
+}
+
+
+
+#headertext { 
+   position: absolute; 
+   top: 330px; 
+   left: 50px; 
+   width: 100%; 
+   font-size:70pt;
+   color:white;
+   font-family:"Headland One", serif;
+   opacity:0.8;
+   
+  
+}
+#headertext2 { 
+   position: absolute; 
+   top: 410px; 
+   left: 50px; 
+   width: 100%; 
+   font-size:70pt;
+   color:white;
+   font-family:"Headland One", serif;
+   opacity:0.8;
+ 
+}
+
+
+/*Styling of the social media buttons, taken from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_social_media_buttons2*/
+
+.fa {
+  padding: 7px;
+  font-size: 30px;
+  width: 15px;
+  text-align: center;
+  text-decoration: none;
+  margin: 4px 2px 0px 5px;
+  border-radius: 50%;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-github {
+  background: #000000;
+  color: white;
+}
+
+/*Styling for the modal images take place from here, all comments from http://codepen.io/ongtiffany/pen/BoOeQV*/
+/*Eliminates padding, centers the thumbnail */
+
+body, html {
+padding: 0;
+margin-left:10pt;
+}
+
+/* Styles the thumbnail */
+
+a.thumbnail img {
+height: 150px;
+margin: 20px 20px 20px 20px;
+text-align:center;
+
+}
+
+.thumbnail:hover {
+	opacity:0.8;
+}
+
+/* Styles the lightbox, removes it from sight and adds the fade-in transition */
+
+.thumbnail-target {
+position: fixed;
+top: 100%;
+width: 100%;
+background: white;
+width: 100%;
+opacity: 0;
+-webkit-transition: opacity .5s ease-in-out;
+-moz-transition: opacity .5s ease-in-out;
+-o-transition: opacity .5s ease-in-out;
+transition: opacity .5s ease-in-out;
+overflow: hidden;
+}
+
+/* Styles the lightbox image, centers it vertically and horizontally, adds the zoom-in transition and makes it responsive using a combination of margin and absolute positioning */
+
+.thumbnail-target img {
+margin: auto;
+position: absolute;
+top: 0;
+left:0;
+right:0;
+bottom: 0;
+max-height: 0%;
+max-width: 0%;
+box-shadow: 0px 0px 8px rgba(0,0,0,.3);
+box-sizing: border-box;
+-webkit-transition: .5s ease-in-out;
+-moz-transition: .5s ease-in-out;
+-o-transition: .5s ease-in-out;
+transition: .5s ease-in-out;
+}
+
+/* Styles the close link, adds the slide down transition */
+
+a.thumbnail-close {
+display: block;
+width:50px;
+height:50px;
+box-sizing: border-box;
+background: white;
+color: white;
+text-decoration: none;
+position: absolute;
+top: -80px;
+right:30pt;
+-webkit-transition: .5s ease-in-out;
+-moz-transition: .5s ease-in-out;
+-o-transition: .5s ease-in-out;
+transition: .5s ease-in-out;
+}
+
+/* Provides part of the "X" to eliminate an image from the close link */
+
+a.thumbnail-close:before {
+content: "";
+display: block;
+height: 30px;
+width: 1px;
+background: black;
+position: absolute;
+left: 26px;
+top:10px;
+-webkit-transform:rotate(45deg);
+-moz-transform:rotate(45deg);
+-o-transform:rotate(45deg);
+transform:rotate(45deg);
+}
+
+/* Provides part of the "X" to eliminate an image from the close link */
+
+a.thumbnail-close:after {
+content: "";
+display: block;
+height: 30px;
+width: 1px;
+background: black;
+position: absolute;
+left: 26px;
+top:10px;
+-webkit-transform:rotate(-45deg);
+-moz-transform:rotate(-45deg);
+-o-transform:rotate(-45deg);
+transform:rotate(-45deg);
+}
+
+/* Uses the :target pseudo-class to perform the animations upon clicking the .lightbox-target anchor */
+
+.thumbnail-target:target {
+opacity: 1;
+top: 0;
+bottom: 0;
+}
+
+.thumbnail-target:target img {
+max-height: 100%;
+max-width: 100%;
+}
+
+.thumbnail-target:target a.thumbnail-close {
+top: 0px;
+}
+
+
+
+
+@media screen and (max-width: 1000px) {
+
+.bodytext {
+	width:100%;
+	margin-left:20pt;
+}
+
+blockquote {
+	width:100%;
+
+}
+
+#rows {
+	width:100%;
+}
+
+#headerimage {
+	width:90%;
+}
+
+#imagewrapper {
+	width:100%;
+}
+
+#textwrapper {
+	width:200%;
+}
